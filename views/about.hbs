@@ -1,0 +1,21 @@
+<div class="jumbotron">
+    <div class="container">
+        <h1>{{title}}</h1>
+        <p>Contents ...</p>
+        <p>
+            <a class="btn btn-primary btn-lg">Learn more</a>
+        </p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        
+        {{#each data}}
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <center>{{this}}</center>
+            </div>
+        {{/each}}
+        
+    </div>
+</div>
