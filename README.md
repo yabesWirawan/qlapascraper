@@ -1,8 +1,6 @@
 # qlapascrapper
 Scrapping qlapa with node js
 
-![alt tag](https://goo.gl/photos/Sk7WxVX44jKV83me8)
-
 To use the application, simply clone or download the zip files. Then cd into the project folder and do
 
 <pre>
