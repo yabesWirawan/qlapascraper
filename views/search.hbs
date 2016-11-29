@@ -1,0 +1,32 @@
+<div class="container">
+    <h1 class="text-center" id="search-title">Search "{{title}}"</h1>
+    
+    <br>
+
+    
+    <div class="row">
+    
+    {{#each data}}
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">{{this.title}}</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <img src="{{this.photoUrl}}" alt="" class="img-responsive img-rounded"><br>
+                        <center><a href="https://qlapa.com{{this.shopUrl}}">By {{this.shopName}}</a></center> @ Rp{{this.minPrice}}
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
+    </div>
+    
+    
+</div>

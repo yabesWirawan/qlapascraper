@@ -58,12 +58,16 @@ app.get('/about', function(req, res){
 app.get('/product/search', function(req, res){
     // Do Something...
     // console.log(req.param('search'))
-    request('https://qlapa.com/api/search?page=2&searchQuery='+req.param('search')+'&men=true&women=true&page=1&nonEtnik=false&etnik=false&priceMin=0&priceMax=99999999&sortMode=1&custom=false&child=false', function (err,resp,html){
+    request('https://qlapa.com/api/search?searchQuery='+req.param('search')+'&men=true&women=true&page=1&nonEtnik=false&etnik=false&priceMin=0&priceMax=99999999&sortMode=1&custom=false&child=false', function (err,resp,html){
         // Do something ...
         var json = JSON.parse(html)
         if(!err && resp.statusCode == 200){
-            res.send(json.items)
+            res.render('search', {
+                title: req.param('search'),
+                data: json.items
+            })
         }
+        // console.log(json)
     })
 })
 

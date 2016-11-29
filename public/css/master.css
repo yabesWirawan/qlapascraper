@@ -12,3 +12,14 @@ body{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff51e7', endColorstr='#4c024f',GradientType=0 ); /* IE6-9 */
     color: #fff;
 }
+
+#search-title{
+    color: #fff;
+    padding: 20px;
+}
+
+.wrapper{
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+}
