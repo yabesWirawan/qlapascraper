@@ -14,4 +14,4 @@ If <code>$ npm install</code> returns an error, you might want to install all pa
 $ npm install {packagename} --save
 </pre>
 
-Make sure nodejs are installed on your computer or server. Simply download nodejs <a href="https://nodejs.org/en/download/">here</a>
+Make sure nodejs are installed on your computer or server. Simply download nodejs <a href="https://nodejs.org/en/download/" target="blank">here</a>
