@@ -22,7 +22,7 @@ var hbs = require('express-handlebars')
 var request = require('request')
 var fs = require('fs')
 var json2csv = require('json2csv')
-var mime = require('mime');
+var mime = require('mime')
 
 var app = express()
 var router = express.Router()
@@ -95,7 +95,7 @@ app.get('/convert', function(req, res){
                 if (err) throw err;
                     res.render('index',{
                         title: 'Qlapa Web Scraper',
-                        message: "Your file has been sucessfully downloaded ..."
+                        message: "Your file has been sucessfully converted ..."
                     });
                 });
             })
@@ -118,11 +118,6 @@ app.get('/download', function(req, res){
     var filestream = fs.createReadStream(file);
     filestream.pipe(res);
 })
-
-// app.get('/product/search/:term', function(req, res){
-//     // Do Something...
-//     console.log(req.params.term)
-// })
 
 // Do Something...
 
