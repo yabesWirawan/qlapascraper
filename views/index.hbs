@@ -3,6 +3,15 @@
         <h1>{{title}}</h1>
         <p>Search product and save it in csv file</p>
         
+        {{#if message}}
+    
+            <div class="alert alert-info">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                {{message}} <a href="/download">Download here.</a>
+            </div>
+            
+        {{/if}}
+
         <form action="/product/search" class="form-inline" method="GET" role="form">
         
             <div class="input-group">
