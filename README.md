@@ -1,6 +1,8 @@
 # qlapascrapper
 Scrapping qlapa with node js
 
+![Qlapa Web Scrapper](public/img/chrome_2018-01-16_11-57-31.png)
+
 To use the application, simply clone or download the zip files. Then cd into the project folder and do
 
 <pre>
